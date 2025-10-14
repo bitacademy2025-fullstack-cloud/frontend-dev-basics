@@ -37,8 +37,6 @@ Array.prototype.insert = function(index, value) {
 }
 
 
-
-
 // Test
 var a = [1, 2, 4];
 console.log(a);
@@ -51,3 +49,19 @@ console.log(a);
 
 a.insert(2, ['a', 'b', 'c']);
 console.log(a); // [1, 3, 'a', 'b', 'c', 4]
+
+
+
+
+
+
+Goods g = new Goods();
+
+
+
+
+
+
+
+
+
