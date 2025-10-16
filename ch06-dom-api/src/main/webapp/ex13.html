@@ -3,6 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+window.addEventListener("load", () => {
+	document
+		.querySelector("#form-login")
+		.addEventListener("submit", function(event) {
+			event.preventDefault();
+			
+			// 이메일 유효성 체크
+			var email = document.querySelector("#input-email").value;
+			if(email === "") {
+				alert("이메일이 비어 있습니다.");
+				document.querySelector("#input-email").focus();
+				return;
+			}
+			
+			// 비밀번호 유효성 체크
+			var password = document.querySelector("#input-password").value;
+			if(password === "") {
+				alert("비밀번호가 비어 있습니다.");
+				document.querySelector("#input-password").focus();
+				return;
+			}
+			
+			// this.submit();
+			console.log("AJAX login 하기~");
+			
+		});
+});
+</script>
 </head>
 <body>
 	<h1>DOM(Document Object Model)</h1>
